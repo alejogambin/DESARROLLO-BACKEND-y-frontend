@@ -60,7 +60,7 @@
               <a class="nav-link" href="#contacto">Contactanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
           </ul>
         </div>
@@ -74,10 +74,10 @@
         <h1>Consultoria y Desarrollado de Software</h1>
       </div>
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center img-custom">
           <div class="col-lg-6">
             <img
-              class="mt-5 img-fluid rounded-4"
+              class="mt-5 img-fluid rounded-4 forma-img"
               src="imagenes/imagen 3.png"
               alt=""
               width="500"
@@ -581,29 +581,125 @@
       >
         <h2 class="mt-5">Formulario de Contacto</h2>
       </div>
-      <div class="container img-custom">
-        <div>
-          <h4>Dirección física</h4>
-          <p>
-            Av. Providencia 1234, Oficina 601 <br />
-            Providencia, Santiago Chile
-          </p>
+      <div
+        class="container d-flex justify-content-center align-items-center mt-5"
+      >
+        <div class="w-50">
+          <form>
+            <div class="mb-3">
+              <label for="nombreForm" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombreForm" />
+            </div>
+            <div class="mb-3">
+              <label for="emailForm" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailForm"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="region-pais" class="form-label">Región</label>
+              <select
+                id="region-pais"
+                class="form-select form-select-sm"
+                aria-label="Selecciona una región"
+              >
+                <option selected>Seleccione región</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="cuidad-pais" class="form-label">Ciudad</label>
+              <select
+                id="cuidad-pais"
+                class="form-select form-select-sm"
+                aria-label="Selecciona una ciudad"
+              >
+                <option selected>Seleccione ciudad</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Requerimientos</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Requerimientos"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
         </div>
-        <div>
-          <h4>Contacto telefónico</h4>
-          <p>Teléfono: +56 2 1234 5678</p>
+      </div>
+      <div class="row align-items-center mt-5">
+        <div class="img-custom col-lg-6">
+          <div>
+            <h4>Dirección física</h4>
+            <p>
+              Av. Providencia 1234, Oficina 601 <br />
+              Providencia, Santiago Chile
+            </p>
+          </div>
+          <div>
+            <h4>Contacto telefónico</h4>
+            <p>Teléfono: +56 2 1234 5678</p>
+          </div>
+          <div>
+            <h4>Dominio de la página web</h4>
+            <p>www.coningenio.cl</p>
+          </div>
+          <div>
+            <h4>Correo electrónico</h4>
+            <p>info@coningenio.cl</p>
+          </div>
         </div>
-        <div>
-          <h4>Dominio de la página web</h4>
-          <p>www.coningenio.cl</p>
-        </div>
-        <div>
-          <h4>Correo electrónico</h4>
-          <p>info@coningenio.cl</p>
+        <div class="col-lg-6 img-custom">
+          <iframe
+            class="rounded-4 ms-lg-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.778630504622!2d-70.62355162467445!3d-33.42901527339806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf62a2cb75c3%3A0xeefbd125aba56501!2sAv.%20Providencia%201234%2C%20Oficina%20601%2C%207500571%20Providencia%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1744645781321!5m2!1ses!2scl"
+            width="400"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
     <!-- FIn CONTACTO-->
+
+    <!-- INICIO NOSOTROS-->
+    <div id="nosotros" class="container img-custom d-flex align-items-center justify-content-center">
+      <div class="row w-100">
+        <!-- Imagen -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-1 order-lg-1">
+          <img src="imagenes/imagen 3.png" alt="" class="imagen1" width="400" height="400" />
+        </div>
+        <!-- Misión -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-2 order-lg-2">
+          <h4 class="text-center">Misión</h4>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quasi odio itaque beatae tempora necessitatibus vel velit quibusdam ullam, voluptatibus exercitationem dolorum! Eos sequi hic officiis rerum et, quia ullam. Error hic laborum tempore cupiditate laboriosam debitis neque. Dicta, enim?
+          </p>
+        </div>
+        <!-- Visión -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-4 order-lg-3">
+          <h4 class="text-center">Visión</h4>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quasi odio itaque beatae tempora necessitatibus vel velit quibusdam ullam, voluptatibus exercitationem dolorum! Eos sequi hic officiis rerum et, quia ullam. Error hic laborum tempore cupiditate laboriosam debitis neque. Dicta, enim?
+          </p>
+        </div>
+        <!-- Imagen -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-3 order-lg-4">
+          <img src="imagenes/imagen 4.png" alt="" class="imagen1" width="400" height="400" />
+        </div>
+      </div>
+    </div>
+    <!--FIN NOSOTROS-->
 
     <!-- INICIO FOOTER-->
     <footer class="text-white ms-auto py-3 mt-5 custom-footer">
@@ -637,6 +733,7 @@
       </div>
     </footer>
     <!-- FIN FOOTER -->
-    <script src="js/script.js"></script>
+    <script src="js/componente_navbar_toggler.js"></script>
+    <script src="js/componente_region_ciudad.js"></script>
   </body>
 </html>
