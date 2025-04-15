@@ -1,0 +1,27 @@
+.custom-navbar {
+    background-color: #2471ed;
+    padding: 5px 10px;
+}
+
+.forma-img {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.imagen1 {
+    clip-path: polygon(39% 0, 100% 0, 85% 46%, 94% 78%, 29% 96%, 40% 66%, 1% 100%, 14% 44%, 0 30%);
+}
+
+.custom-footer {
+    background-color: #2471ed;
+    padding: 10px 0;
+}
+
+.img-custom {
+    margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .img-custom {
+        margin-top: 100px;
+    }
+  }
