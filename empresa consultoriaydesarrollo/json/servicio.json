@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Consultoría Digital",
+        "descripcion": "Transformación Digital,Desarrollo de Software,Marketing Digital,QA,Infraestructura,Ciberseguridad,Cloud,Inteligencia Artificial,Big Data",
+        "precio": 1500,
+        "duracion": 2
+    },
+    {
+        "nombre": "Soluciones Multiexperiencia",
+        "descripcion": "Diseño de Experiencias Digitales,Desarrollo de Aplicaciones Multicanal,Integracion de Tecnologias Emergentes,Personalizacion Avanzada,Analisis de Experiencia del Usuario",
+        "costo": 3000,
+        "duracion": 4
+    },
+    {
+        "nombre": "Evolución de Ecosistemas",
+        "descripcion": "Modernización tecnológica,Mantenimiento continuo,Escalabilidad,Integración de nuevas tecnologías",
+        "costo": 800,
+        "duracion": 1
+    },
+    {
+        "nombre": "Soluciones Low-Code",
+        "descripcion": "Reducción de tiempos de desarrollo,Flexibilidad y adaptabilidad,Optimización de costos,Accesibilidad",
+        "costo": 2000,
+        "duracion": 3
+    }
+]
