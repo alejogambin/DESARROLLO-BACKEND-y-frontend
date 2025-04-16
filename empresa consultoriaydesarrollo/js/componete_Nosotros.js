@@ -30,7 +30,7 @@ function cargarVision() {
       const data = JSON.parse(xhr.responseText);
 
       // Mostrar la visión en el elemento correspondiente
-      visionElement.innerHTML = `<p>${data[1].vision}</p>`;
+      visionElement.innerHTML = `<p>${data[0].vision}</p>`;
     } else {
       console.error('Error al cargar el archivo JSON de visión.');
     }
