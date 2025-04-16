@@ -2,7 +2,7 @@
     {
         "nombre": "Consultoría Digital",
         "descripcion": "Transformación Digital,Desarrollo de Software,Marketing Digital,QA,Infraestructura,Ciberseguridad,Cloud,Inteligencia Artificial,Big Data",
-        "precio": 1500,
+        "costo": 1500,
         "duracion": 2
     },
     {

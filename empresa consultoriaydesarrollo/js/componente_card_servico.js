@@ -16,14 +16,16 @@ function cargarServicios() {
       let serviciosHTML = '';
       data.forEach((servicio) => {
     serviciosHTML += `
-        <div class="container d-flex flex-wrap justify-content-center align-items-center">
-        <div class="col-lg-3 d-flex justify-content-center">    
-        <div class="card">
-        <h3 class="card-title">${servicio.nombre}</h3>
-        <p class="card-description">${servicio.descripcion}</p>
-        <p class="card-cost">costo: $${servicio.costo}</p>
-        <p class="card-duration">${servicio.duracion} horas</p>
-        </div></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="card shadow" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">${servicio.nombre}</h5>
+                <p class="card-text">${servicio.descripcion}</p>
+                <p class="card-text"><strong>Costo:</strong> $${servicio.costo}</p>
+                <p class="card-text"><strong>Duración:</strong> ${servicio.duracion} horas</p>
+              </div>
+            </div>
+          </div>
         `;
         });
         //insertar las tarjetas en el contenedor
