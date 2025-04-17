@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS `Ciudades`;
 DROP TABLE IF EXISTS `ServiciosCiudades`;
 CREATE TABLE `Nosotros`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `Misionbigint` VARCHAR(255) NOT NULL,
+    `Mision` VARCHAR(255) NOT NULL,
     `Vision` VARCHAR(255) NOT NULL
 );
 CREATE TABLE `Servicios`(

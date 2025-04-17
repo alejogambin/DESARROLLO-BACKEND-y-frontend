@@ -1,6 +1,6 @@
 --carga de datos--
 -- Datos para la tabla `Nosotros`
-INSERT INTO `Nosotros` (`Misionbigint`, `Vision`)
+INSERT INTO `Nosotros` (`Mision`, `Vision`)
 VALUES
 ('Proveer soluciones tecnológicas innovadoras que impulsen el éxito de nuestros clientes.', 
  'Ser líderes en el desarrollo de software personalizado a nivel global.');
