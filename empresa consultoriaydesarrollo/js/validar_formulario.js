@@ -6,42 +6,53 @@ const region = document.getElementById('region-pais');
 const ciudad = document.getElementById('cuidad-pais');
 const requerimientosTextarea = document.getElementById('exampleFormControlTextarea1');
 
+//Funcion para limpiar mensajes de error 
+function limpiarErrores() {
+  document.querySelectorAll('error-menssage').forEach((span) => {
+    span.textContent = '';
+  })
+}
 // función para validar el formulario
 function validarFormulario(event) {
-    event.preventDefault(); // Evitar el envío del formulario si hay errores
-    let errores = [];
-    //validar nombre
-    if(nombreInput.value.trim() === ''){
-        errores.push('El nombre es obligatorio.');
-    }
-    
+  event.preventDefault(); // Evitar el envío del formulario si hay errores
+  limpiarErrores(); // Limpiar mensajes de error previos
+
+  let errores = [];
+  //validar nombre
+  if (nombreInput.value.trim() === '') {
+    document.getElementById('error-nombre').textContent = 'El campo "Nombre Completo" es obligatorio.';
+    errores++;
+  }
+
   // Validar el correo electrónico
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(emailInput.value.trim())) {
-    errores.push('El campo "Email" debe contener un correo válido.');
+    document.getElementById('error-email').textContent = 'El campo "Email" debe contener un correo válido.';
+    errores++;
   }
 
   // Validar la región
   if (region.value === 'Seleccione región') {
-    errores.push('Debe seleccionar una región.');
+    document.getElementById('error-region').textContent = 'Debe seleccionar una región.';
+    errores++;
   }
 
   // Validar la ciudad
   if (ciudad.value === 'Seleccione ciudad') {
-    errores.push('Debe seleccionar una ciudad.');
+    document.getElementById('error-ciudad').textContent = 'Debe seleccionar una ciudad.';
+    errores++;
   }
 
   // Validar los requerimientos
   if (requerimientosTextarea.value.trim() === '') {
-    errores.push('El campo "Requerimientos" es obligatorio.');
+    document.getElementById('error-requerimientos').textContent = 'El campo "Requerimientos" es obligatorio.';
+    errores++;
   }
 
   // Mostrar errores o enviar el formulario
-  if (errores.length > 0) {
-    alert(errores.join('\n')); // Mostrar los errores en un cuadro de alerta
-  } else {
+  if (errores === 0) {
     alert('Formulario enviado correctamente.');
-    formulario.submit(); // Enviar el formulario si no hay errores
+    formulario.submit();
   }
 }
 
