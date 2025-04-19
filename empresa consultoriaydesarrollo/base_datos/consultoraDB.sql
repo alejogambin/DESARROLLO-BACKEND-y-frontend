@@ -1,7 +1,8 @@
+DROP TABLE IF EXISTS `ServiciosCiudades`;
 DROP TABLE IF EXISTS `Nosotros`;
 DROP TABLE IF EXISTS `Servicios`;
 DROP TABLE IF EXISTS `Ciudades`;
-DROP TABLE IF EXISTS `ServiciosCiudades`;
+
 CREATE TABLE `Nosotros`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `Mision` VARCHAR(255) NOT NULL,
@@ -24,6 +25,6 @@ CREATE TABLE `ServiciosCiudades`(
     `idCiudad` BIGINT UNSIGNED NOT NULL
 );
 ALTER TABLE
-    `ServiciosCiudades` ADD CONSTRAINT `serviciosciudades_idservicio_foreign` FOREIGN KEY(`idServicio`) REFERENCES `Servicios`(`id`);
+    `ServiciosCiudades` ADD CONSTRAINT `serviciosciudades_idservicio_foreign` FOREIGN KEY(`idServicio`) REFERENCES `Servicios`(`id`) on delete cascade;
 ALTER TABLE
-    `ServiciosCiudades` ADD CONSTRAINT `serviciosciudades_idciudad_foreign` FOREIGN KEY(`idCiudad`) REFERENCES `Ciudades`(`id`);
+    `ServiciosCiudades` ADD CONSTRAINT `serviciosciudades_idciudad_foreign` FOREIGN KEY(`idCiudad`) REFERENCES `Ciudades`(`id`) on delete cascade;

@@ -15,7 +15,20 @@ switch ($request) {
     case 'servicios':
         require_once 'controllers/ServiciosControllers.php';
         $Controller = new ServiciosController();
-        $Controller->listar();
+        if($_SERVER['REQUEST_METHOD']== 'POST'){
+            $Controller->crear();
+            
+        }elseif ($_SERVER['REQUEST_METHOD']== 'PUT'){
+            $Controller->actualizar();
+            
+        }elseif ($_SERVER['REQUEST_METHOD']== 'DELETE'){
+            $Controller->eliminar();
+            
+        }elseif ($_SERVER['REQUEST_METHOD']== 'GET'){
+            $Controller->listar();
+        }else{
+                echo json_encode(array("message" => "Método no permitido."));
+            }
         break;
     case 'nosotros':
         require_once 'controllers/NosotrosControllers.php';
