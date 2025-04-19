@@ -388,27 +388,32 @@
                     <div class="mb-3">
                         <label for="nombreForm" class="form-label">Nombre Completo</label>
                         <input type="text" class="form-control" id="nombreForm" />
+                        <span class="text-danger error-message" id="error-nombre"></span>
                     </div>
                     <div class="mb-3">
                         <label for="emailForm" class="form-label">Email</label>
                         <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" />
+                        <span class="text-danger error-message" id="error-email"></span>
                     </div>
                     <div class="mb-3">
                         <label for="region-pais" class="form-label">Región</label>
                         <select id="region-pais" class="form-select form-select-sm" aria-label="Selecciona una región">
                             <option selected>Seleccione región</option>
                         </select>
+                        <span class="text-danger error-message" id="error-region"></span>
                     </div>
                     <div class="mb-3">
                         <label for="cuidad-pais" class="form-label">Ciudad</label>
                         <select id="cuidad-pais" class="form-select form-select-sm" aria-label="Selecciona una ciudad">
                             <option selected>Seleccione ciudad</option>
                         </select>
+                        <span class="text-danger error-message" id="error-ciudad"></span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Requerimientos</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Requerimientos"></textarea>
+                            <span class="text-danger error-message" id="error-requerimientos"></span>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Enviar</button>
                 </form>
