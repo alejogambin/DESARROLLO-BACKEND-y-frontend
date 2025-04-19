@@ -1,5 +1,5 @@
 //ruta al archivo JSON
-const NOSOTROS_JSON_URL = './json/Nosotros.json';
+const NOSOTROS_JSON_URL = '/empresa consultoriaydesarrollo/json/Nosotros.json';
 
 //Elementos del DOM donde se mostraran la mision y vision 
 const misionElement = document.getElementById('mision');
