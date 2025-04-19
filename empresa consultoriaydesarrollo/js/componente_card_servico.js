@@ -1,5 +1,5 @@
 // ruta al archivo JSON
-const SERVICIOS_JSON_URL = '/empresa consultoriaydesarrollo/json/servicio.json';
+const SERVICIOS_JSON_URL = 'empresa consultoriaydesarrollo/json/servicio.json';
 
 //contenedor donde se mostraran las tarjetas de servicios
 const serviciosContainer = document.getElementById('servicios-container');

@@ -1,5 +1,5 @@
 // Ruta al archivo JSON
-const JSON_URL = '/empresa consultoriaydesarrollo/json/tlp.json';
+const JSON_URL = 'empresa consultoriaydesarrollo/json/tlp.json';
 
 // Obtener los elementos del DOM
 const regionSelect = document.getElementById('region-pais');
