@@ -4,11 +4,14 @@
 }
 
 .forma-img {
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
-.imagen1 {
-    clip-path: polygon(39% 0, 100% 0, 85% 46%, 94% 78%, 29% 96%, 40% 66%, 1% 100%, 14% 44%, 0 30%);
+.img-first {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.img-second {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
 
 .custom-footer {
@@ -25,3 +28,18 @@
         margin-top: 100px;
     }
   }
+@media (max-width: 992px) {
+    .img-first, .img-second {
+        clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 75%, 50% 100%, 0 75%, 0% 70%, 0% 35%, 0 0);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .custom-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

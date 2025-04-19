@@ -31,16 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link text-white" aria-current="page" href="#hero">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicio">Nuestros Servicios</a>
+                        <a class="nav-link text-white" href="#servicio">Nuestros Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contactanos</a>
+                        <a class="nav-link text-white" href="#contacto">Contactanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                        <a class="nav-link text-white" href="#nosotros">Nosotros</a>
                     </li>
                 </ul>
             </div>
@@ -49,9 +49,9 @@
     <!-- FIN NAVBAR -->
 
     <!-- INICIO HERO -->
-    <div class="container hero">
+    <div class="container" id="hero">
         <div class="d-flex justify-content-center align-items-center mt-5 ps-3">
-            <h1>Consultoria y Desarrollado de Software</h1>
+            <h1 class="border-bottom border-info">Consultoria y Desarrollado de Software</h1>
         </div>
         <div class="container">
             <div class="row align-items-center img-custom">
@@ -82,302 +82,17 @@
     </div>
     <!-- FIN HERO -->
 
-    <!-- NUESTROS SERVICIOS 
-    <div class="container">
-        
-        <div id="servicio" class="d-flex justify-content-center align-items-center mt-5 ps-3">
-            <h2 class="mt-5">Nuestros Servicios</h2>
+    <!-- NUESTROS SERVICIOS -->
+    <div class="container bg-info rounded-4 mt-5 p-3 text-white">
+        <div id="servicio" class="d-flex justify-content-center align-items-center  ps-3">
+            <h2 class="mt-5">Servicios</h2>
         </div>
-        <div class="container d-flex flex-wrap justify-content-center align-items-center">
-            <div class="col-lg-3 d-flex justify-content-center">
-                <div class="card img-custom shadow" style="width: 14rem">
-                    <img src="imagenes/imagen 1.png" class="card-img-top" alt="" width="300" height="200" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Consultoría Digital</h5>
-                         Botón modal visible en pantallas pequeñas 
-                        <div class="d-block d-lg-none">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#dataInformatica">
-                                + INFO
-                            </button>
-                        </div>
-                         Etiqueta <p> y botón visible en pantallas grandes 
-                        <div class="d-none d-lg-block text-start">
-                            <p>
-                            <ul>
-                                <li>Transformación Digital</li>
-                                <li> Desarrollo de Software</li>
-                                <li> Marketing Digital</li>
-                                <li> QA</li>
-                                <li> Infraestructura</li>
-                                <li> Ciberseguridad</li>
-                                <li> Cloud</li>
-                                <li> Inteligencia Artificial</li>
-                                <li> Big Data</li>
-                            </ul>
-                            </p>
-                            <a href="#contacto" class="btn btn-primary text-light">Contactanos!</a>
-                        </div>
-                        Modal 
-                        <div class="modal fade" id="dataInformatica" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="interInformaticaLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="interInformaticaLabel">
-                                            Consultoría Digital
-                                        </h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>
-                                            servicio para ayudar a otras organizaciones a
-                                            adaptarse y prosperar en el entorno digital. algunos de los
-                                            servicios incluir:
-                                        <ul>
-                                            <li>
-                                                Transformación Digital: Ayudan a las empresas a integrar tecnologías
-                                                digitales en todas las áreas de su negocio, optimizando procesos y
-                                                mejorando
-                                                la experiencia del cliente.
-                                            </li>
-                                            <li>
-                                                Desarrollo de Software Personalizado: Crean soluciones tecnológicas
-                                                adaptadas a las necesidades específicas de cada cliente, como
-                                                aplicaciones
-                                                móviles, sistemas de gestión empresarial, y plataformas web.
-                                            </li>
-                                            <li>Automatización de Procesos: Implementan herramientas para automatizar
-                                                tareas repetitivas, aumentando la eficiencia y reduciendo costos
-                                                operativos.</li>
-                                            <li>Marketing Digital: Diseñan estrategias para mejorar la presencia en
-                                                línea
-                                                de las empresas, incluyendo SEO, campañas en redes sociales y publicidad
-                                                digital.</li>
-                                            <li>Inteligencia de Negocios: Utilizan análisis de datos para proporcionar
-                                                información estratégica que ayude a tomar decisiones informadas.</li>
-                                            <li>Ciberseguridad: Ofrecen soluciones para proteger los datos y sistemas de
-                                                las empresas contra amenazas digitales.</li>
-                                        </ul>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Cerrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="servicios-container" class="container d-flex flex-wrap gap-5 justify-content-center align-items-center mt-5">
             </div>
-            <div class="col-lg-3 d-flex justify-content-center">
-                <div class="card img-custom shadow" style="width: 14rem">
-                    <img src="imagenes/imagen 1.png" class="card-img-top" alt="" width="300" height="200" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soluciones Multiexperiencia</h5>
-                         Botón modal visible en pantallas pequeñas 
-                        <div class="d-block d-lg-none">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#dataInformatica">
-                                + INFO
-                            </button>
-                        </div>
-                         Etiqueta <p> y botón visible en pantallas grandes 
-                        <div class="d-none d-lg-block text-start">
-                            <p>
-                            <ul>
-                                <li>Diseño de Experiencias Digitales</li>
-                                <li>Desarrollo de Aplicaciones Multicanal</li>
-                                <li>Integracion de Tecnologias Emergentes</li>
-                                <li>Personalizacion Avanzada</li>
-                                <li>Analisis de Experiencia del Usuario</li>
-                            </ul>
-                            </p>
-                            <a href="#contacto" class="btn btn-primary text-light">Contactanos!</a>
-                        </div>
-                         Modal 
-                        <div class="modal fade" id="dataInformatica" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="interInformaticaLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="interInformaticaLabel">
-                                            Soluciones Multiexperiencia
-                                        </h5>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <p>
-                                            mejorar la interacción entre los usuarios y las plataformas digitales
-                                        <ul>
-                                            <li>Diseño de Experiencias Digitales: Creación de interfaces intuitivas y
-                                                atractivas que optimicen la interacción del usuario en múltiples
-                                                dispositivos y canales.
-                                            </li>
-                                            <li>Desarrollo de Aplicaciones Multicanal: Implementación de aplicaciones
-                                                que funcionan de manera fluida en diferentes plataformas, como móviles,
-                                                web, y dispositivos IoT.
-                                            </li>
-                                            <li> Integración de Tecnologías Emergentes: Uso de inteligencia artificial,
-                                                realidad aumentada y virtual para enriquecer la experiencia del usuario.
-                                            </li>
-                                            <li>
-                                                Personalización Avanzada: Adaptación de contenidos y funcionalidades
-                                                según las preferencias y comportamientos de los usuarios.</li>
-                                            <li>
-                                                Análisis de Experiencia del Usuario: Evaluación continua para mejorar la
-                                                satisfacción y la eficiencia en el uso de las soluciones digitales.</li>
-                                        </ul>
 
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Cerrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 d-flex justify-content-center">
-                <div class="card img-custom shadow" style="width: 14rem">
-                    <img src="imagenes/imagen 1.png" class="card-img-top" alt="" width="300" height="200" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Evolución de Ecosistemas</h5>
-                         Botón modal visible en pantallas pequeñas
-                        <div class="d-block d-lg-none">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#dataInformatica">
-                                + INFO
-                            </button>
-                        </div>
-                         Etiqueta <p> y botón visible en pantallas grandes 
-                        <div class="d-none d-lg-block text-start">
-                            <p>
-                            <ul>
-                                <li>Modernización tecnológica</li>
-                                <li>Mantenimiento continuo</li>
-                                <li>Escalabilidad</li>
-                                <li>Integración de nuevas tecnologías</li>
-                            </ul>
-                            </p>
-                            <a href="#contacto" class="btn btn-primary text-light">Contactanos!</a>
-                        </div>
-                         Modal 
-                        <div class="modal fade" id="dataInformatica" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="interInformaticaLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="interInformaticaLabel">
-                                            Evolución de Ecosistemas
-                                        </h5>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <p>
-                                            centra en la modernización, mantenimiento y optimización de los sistemas
-                                            tecnológicos de una organización. Este servicio busca garantizar que las
-                                            aplicaciones y plataformas tecnológicas de una empresa se mantengan
-                                            actualizadas, eficientes y adaptables a los cambios del entorno empresarial.
-                                        <ul>
-                                            <li>Modernización tecnológica Actualización de sistemas y aplicaciones para
-                                                incorporar tecnologías más avanzadas y eficientes.</li>
-                                            <li>Mantenimiento continuo Supervisión y ajustes regulares para garantizar
-                                                el rendimiento óptimo de los ecosistemas tecnológicos.</li>
-                                            <li>Escalabilidad Adaptación de las plataformas para que puedan crecer junto
-                                                con las necesidades de la empresa.</li>
-                                            <li>Integración de nuevas tecnologías Implementación de soluciones como
-                                                inteligencia artificial, IoT o plataformas en la nube para mejorar la
-                                                funcionalidad y la experiencia del usuario.</li>
-                                        </ul>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Cerrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 d-flex justify-content-center">
-                <div class="card img-custom shadow" style="width: 14rem">
-                    <img src="imagenes/imagen 1.png" class="card-img-top" alt="" width="300" height="200" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soluciones Low-Code</h5>
-                         Botón modal visible en pantallas pequeñas 
-                        <div class="d-block d-lg-none">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#dataInformatica">
-                                + INFO
-                            </button>
-                        </div>
-                         Etiqueta <p> y botón visible en pantallas grandes
-                        <div class="d-none d-lg-block text-start">
-                            <p>
-                            <ul>
-                                <li>Reducción de tiempos de desarrollo</li>
-                                <li>Flexibilidad y adaptabilidad</li>
-                                <li>Optimización de costos</li>
-                                <li>Accesibilidad</li>
-                            </ul>
-                            </p>
-                            <a href="#contacto" class="btn btn-primary text-light">Contactanos!</a>
-                        </div>
-                        Modal 
-                        <div class="modal fade" id="dataInformatica" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="interInformaticaLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="interInformaticaLabel">
-                                            Soluciones Low-Code
-                                        </h5>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <p>servicios que permiten a las empresas desarrollar aplicaciones y sistemas de
-                                            manera rápida y eficiente, utilizando plataformas que requieren poca
-                                            codificación manual. Este enfoque es ideal para organizaciones que buscan
-                                            acelerar su transformación digital y optimizar procesos sin depender
-                                            exclusivamente de desarrolladores expertos.
-                                        <ul>
-                                            <li>Reducción de tiempos de desarrollo: Las aplicaciones pueden crearse en
-                                                semanas en lugar de meses.</li>
-                                            <li>Flexibilidad y adaptabilidad: Las plataformas Low-Code permiten realizar
-                                                ajustes rápidos según las necesidades del negocio.</li>
-                                            <li>Optimización de costos: Al simplificar el proceso de desarrollo, se
-                                                reducen los gastos asociados.</li>
-                                            <li>Accesibilidad: Incluso usuarios con poca experiencia técnica pueden
-                                                participar en el desarrollo de soluciones.</li>
-                                        </ul>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Cerrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    FIN NUESTROS SERVICIOS -->
+    <!-- FIN NUESTROS SERVICIOS -->
 
-    <!-- NUESTROS SERVICIOS JSON -->
-
-    <div id="servicios-container" class="container d-flex flex-wrap justify-content-center align-items-center">
-    </div>
-    <!-- FIN NUESTROS SERVICIOS JSON -->
     <!-- INICIO CONTACTO -->
     <div class="container">
         <div id="contacto" class="d-flex justify-content-center align-items-center mt-5 ps-3">
@@ -388,31 +103,31 @@
                 <form id="formularioContacto">
                     <div class="mb-3">
                         <label for="nombreForm" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombreForm" />
+                        <input type="text" class="form-control  border-primary " id="nombreForm" />
                         <span class="text-danger error-message" id="error-nombre"></span>
                     </div>
                     <div class="mb-3">
                         <label for="emailForm" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" />
+                        <input type="email" class="form-control border-primary" id="emailForm" aria-describedby="emailHelp" />
                         <span class="text-danger error-message" id="error-email"></span>
                     </div>
                     <div class="mb-3">
                         <label for="region-pais" class="form-label">Región</label>
-                        <select id="region-pais" class="form-select form-select-sm" aria-label="Selecciona una región">
+                        <select id="region-pais" class="form-select form-select-sm border-primary" aria-label="Selecciona una región">
                             <option selected>Seleccione región</option>
                         </select>
                         <span class="text-danger error-message" id="error-region"></span>
                     </div>
                     <div class="mb-3">
                         <label for="cuidad-pais" class="form-label">Ciudad</label>
-                        <select id="cuidad-pais" class="form-select form-select-sm" aria-label="Selecciona una ciudad">
+                        <select id="cuidad-pais" class="form-select form-select-sm border-primary" aria-label="Selecciona una ciudad">
                             <option selected>Seleccione ciudad</option>
                         </select>
                         <span class="text-danger error-message" id="error-ciudad"></span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Requerimientos</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        <textarea class="form-control border-primary" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Requerimientos"></textarea>
                         <span class="text-danger error-message" id="error-requerimientos"></span>
                     </div>
@@ -422,7 +137,7 @@
         </div>
         <div class="row align-items-center mt-5">
             <div class="img-custom col-lg-6">
-                <div>
+                <div class="">
                     <h4>Dirección física</h4>
                     <p>
                         Av. Providencia 1234, Oficina 601 <br />
@@ -453,12 +168,12 @@
     <!-- FIn CONTACTO-->
 
     <!-- INICIO NOSOTROS-->
-    <div id="nosotros" class="container img-custom d-flex align-items-center justify-content-center">
+    <div id="nosotros" class="container img-custom d-flex align-items-center justify-content-center bg-info rounded-4 mt-5 p-3 text-white ">
         <div class="row w-100">
             <div
                 class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-1 order-lg-1">
-                <img src="empresa consultoriaydesarrollo/imagenes/imagen 3.png" alt="" class="imagen1" width="400"
-                    height="400" />
+                <img src="empresa consultoriaydesarrollo/imagenes/imagen 2.png" alt="" class="img-first rounded-4" width="400"
+                    height="350" />
             </div>
             <div
                 class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-2 order-lg-2">
@@ -470,7 +185,7 @@
                 </p>
             </div>
             <div
-                class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-4 order-lg-3">
+                class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-4 order-lg-3 ">
                 <h4 class="text-center">Visión</h4>
                 <p id="vision" class="text-center">
                     Ser el referente global en consultoría y desarrollo de software, liderando la transformación
@@ -481,8 +196,8 @@
             </div>
             <div
                 class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 order-3 order-lg-4">
-                <img src="empresa consultoriaydesarrollo/imagenes/imagen 4.png" alt="" class="imagen1" width="400"
-                    height="400" />
+                <img src="empresa consultoriaydesarrollo/imagenes/imagen 4.png" alt="" class="img-second rounded-4" width="400"
+                    height="350" />
             </div>
         </div>
     </div>
@@ -490,7 +205,7 @@
 
     <!-- INICIO FOOTER-->
     <footer class="text-white ms-auto py-3 mt-5 custom-footer">
-        <div class="container d-flex">
+        <div class="container d-flex flex-wrap">
             <div>
                 <p class="mb-0 ms-3">
                     © 2025 Consultores IyG. Todos los derechos reservados.
@@ -512,7 +227,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="text-body ms-1" href="#" aria-label="Facebook">
+                    <a class="text-body ms-1 custom-icon" href="#" aria-label="Facebook">
                         <i class="bi bi-facebook text-white"></i>
                     </a>
                 </div>
@@ -520,6 +235,7 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="empresa consultoriaydesarrollo/js/componente_navbar_toggler.js"></script>
     <script src="empresa consultoriaydesarrollo/js/componente_region_ciudad.js"></script>
     <script src="empresa consultoriaydesarrollo/js/componente_card_servico.js"></script>

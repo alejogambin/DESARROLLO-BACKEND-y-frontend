@@ -16,8 +16,8 @@ function cargarServicios() {
       let serviciosHTML = '';
       data.forEach((servicio) => {
     serviciosHTML += `
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
-            <div class="card shadow" style="width: 18rem;">
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3 d-flex justify-content-center">
+            <div class="card shadow rounded-3" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title text-center">${servicio.nombre}</h5>
                 <p class="card-text">${servicio.descripcion}</p>
