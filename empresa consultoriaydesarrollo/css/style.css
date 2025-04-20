@@ -33,7 +33,22 @@
     margin-top: 20px; /* Margen superior de 20px */
 }
 
+
+.icon-responsive {
+    font-size: 1.5rem; 
+}
+
+/* AQUI VAN LOS MEDIA QUERY */
+
+@media (max-width: 992px) {
+    .nav-custom {
+        border-bottom: rgb(255, 255, 255) solid 1px;
+    }
+}
+
+
 /* Estilo para pantallas grandes (mínimo 992px de ancho) */
+
 @media (min-width: 992px) {
     .img-custom {
         margin-top: 100px; /* Incrementa el margen superior a 100px */
@@ -59,8 +74,13 @@
 
 /* Estilo para la barra de navegación en pantallas pequeñas */
 @media (max-width: 992px) {
+
+    .icon-responsive {
+        font-size: 2rem; 
+=======
     .nav-custom {
         border-bottom: rgb(255, 255, 255) solid 1px; /* Agrega un borde inferior blanco */
+
     }
 }
 
