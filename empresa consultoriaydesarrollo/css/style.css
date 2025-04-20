@@ -42,4 +42,10 @@
     }
 }
 
+@media (max-width: 992px) {
+    .nav-custom {
+        border-bottom: rgb(255, 255, 255) solid 1px;
+    }
+}
+
 

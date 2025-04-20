@@ -27,7 +27,7 @@ function validarFormulario(event) {
   event.preventDefault(); // Evitar el envío del formulario si hay errores
   limpiarErrores(); // Limpiar mensajes de error previos
 
-  let errores = 0;
+  let errores = [];
   //validar nombre
   if (nombreInput.value.trim() === '') {
     document.getElementById('error-nombre').textContent = 'El campo "Nombre Completo" es obligatorio.';
