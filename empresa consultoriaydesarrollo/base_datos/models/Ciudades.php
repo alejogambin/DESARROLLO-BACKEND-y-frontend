@@ -12,6 +12,23 @@ class Ciudades{
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function crearCiudades($nombre){
+        $query = "INSERT INTO Ciudades (nombre)VALUES(:nombre)";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':nombre', $nombre);
+        return $stmt->execute();
+    }
+    public function eliminarCiudades($id){
+        $query = "DELETE FROM Ciudades WHERE ID=".$id;
+        $stmt = $this->db->prepare($query);
+        return $stmt->execute();
+    }
+    public function actualizarCiudades($id,$nombre){
+        $query = "UPDATE Ciudades SET nombre=:nombre WHERE ID=".$id;
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':nombre', $nombre);
+        return $stmt->execute();
+    }
     
 }
 ?>
