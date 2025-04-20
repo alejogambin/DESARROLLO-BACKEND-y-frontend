@@ -23,6 +23,18 @@
     margin-top: 20px;
 }
 
+.icon-responsive {
+    font-size: 1.5rem; 
+}
+
+/* AQUI VAN LOS MEDIA QUERY */
+
+@media (max-width: 992px) {
+    .nav-custom {
+        border-bottom: rgb(255, 255, 255) solid 1px;
+    }
+}
+
 @media (min-width: 992px) {
     .img-custom {
         margin-top: 100px;
@@ -43,8 +55,8 @@
 }
 
 @media (max-width: 992px) {
-    .nav-custom {
-        border-bottom: rgb(255, 255, 255) solid 1px;
+    .icon-responsive {
+        font-size: 2rem; 
     }
 }
 
