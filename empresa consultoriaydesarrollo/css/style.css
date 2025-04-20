@@ -1,27 +1,38 @@
+/* Estilo para la barra de navegación personalizada */
 .custom-navbar {
-    background-color: #2471ed;
-    padding: 5px 10px;
+    background-color: #2471ed; /* Color de fondo azul */
+    padding: 5px 10px; /* Espaciado interno: 5px arriba/abajo, 10px izquierda/derecha */
 }
 
+/* Recorte personalizado para imágenes con forma específica */
 .forma-img {
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    /* Recorta la imagen en una forma poligonal personalizada */
 }
 
+/* Recorte específico para la primera imagen */
 .img-first {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    /* Recorta la imagen en una forma trapezoidal */
 }
+
+/* Recorte específico para la segunda imagen */
 .img-second {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    /* Recorta la imagen en una forma de rombo */
 }
 
+/* Estilo para el pie de página personalizado */
 .custom-footer {
-    background-color: #2471ed;
-    padding: 10px 0;
+    background-color: #2471ed; /* Color de fondo azul */
+    padding: 10px 0; /* Espaciado interno: 10px arriba/abajo */
 }
 
+/* Margen superior para imágenes personalizadas */
 .img-custom {
-    margin-top: 20px;
+    margin-top: 20px; /* Margen superior de 20px */
 }
+
 
 .icon-responsive {
     font-size: 1.5rem; 
@@ -35,29 +46,50 @@
     }
 }
 
+
+/* Estilo para pantallas grandes (mínimo 992px de ancho) */
+
 @media (min-width: 992px) {
     .img-custom {
-        margin-top: 100px;
+        margin-top: 100px; /* Incrementa el margen superior a 100px */
     }
-  }
+}
+
+/* Estilo para pantallas pequeñas (máximo 992px de ancho) */
 @media (max-width: 992px) {
     .img-first, .img-second {
         clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 75%, 50% 100%, 0 75%, 0% 70%, 0% 35%, 0 0);
-    }
-  }
-
-  @media (max-width: 992px) {
-    .custom-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* Cambia el recorte de las imágenes a una forma diferente */
     }
 }
 
+/* Centrado de íconos personalizados en pantallas pequeñas */
 @media (max-width: 992px) {
+    .custom-icon {
+        display: flex; /* Convierte el contenedor en un flexbox */
+        justify-content: center; /* Centra los íconos horizontalmente */
+        align-items: center; /* Centra los íconos verticalmente */
+    }
+}
+
+/* Estilo para la barra de navegación en pantallas pequeñas */
+@media (max-width: 992px) {
+
     .icon-responsive {
         font-size: 2rem; 
+=======
+    .nav-custom {
+        border-bottom: rgb(255, 255, 255) solid 1px; /* Agrega un borde inferior blanco */
+
     }
 }
 
+/* Estilo para agrandar la imagen al pasar el mouse */
+.img-hover-effect {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.img-hover-effect:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
 

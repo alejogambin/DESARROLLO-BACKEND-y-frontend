@@ -23,10 +23,14 @@ function cargarMision() {
 }
 
 function cargarVision() {
+  ///realizar una solicitud HTTP para obtener el archivo JSON
   const xhr = new XMLHttpRequest();
+  ///abrir la conexión con el método GET y la URL del archivo JSON
   xhr.open('GET', NOSOTROS_JSON_URL, true);
+  /// Definir la función que se ejecutará cuando se reciba la respuesta
   xhr.onload = function () {
     if (xhr.status === 200) {
+      /// Convertir la respuesta JSON en un objeto JavaScript
       const data = JSON.parse(xhr.responseText);
 
       // Mostrar la visión en el elemento correspondiente
