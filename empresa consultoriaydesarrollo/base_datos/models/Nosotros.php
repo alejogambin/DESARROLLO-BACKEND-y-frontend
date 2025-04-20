@@ -12,5 +12,24 @@ class Nosotros{
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function crearNosotros($Mision,$Vision){
+        $query = "INSERT INTO nosotros (Mision,Vision)VALUES(:Mision,:Vision)";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':Mision', $Mision);
+        $stmt->bindParam(':Vision', $Vision);
+        return $stmt->execute();
+    }
+    public function eliminarNosotros($id){
+        $query = "DELETE FROM nosotros WHERE ID=".$id;
+        $stmt = $this->db->prepare($query);
+        return $stmt->execute();
+    }
+    public function actualizarNosotros($id,$Mision,$Vision){
+        $query = "UPDATE nosotros SET Mision=:Mision,Vision=:Vision WHERE ID=".$id;
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':Mision', $Mision);
+        $stmt->bindParam(':Vision', $Vision);
+        return $stmt->execute();
+    }
 }
 ?>
